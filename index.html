@@ -19,16 +19,34 @@
   <body>
 
 <!-- dictionary body -->
+<div class="welcome">
+  <header>
+    <img src="/image/logo.png" alt="logo">
+    <div class="logo">
+      
+      <a href="index.html">ଓଡ଼ିଆ Dictionary</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </header>  
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">English To Odia Dictionary</a>
+      <a href="#">Odia To English Dictionary</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <h1>English to Oriya Dictionary</h1>
+</div>
     <main>
         <div class="card">
-          <h1>English to Oriya Dictionary</h1>
-          <br>
           <div class="view-box">
             <form autocomplete="off">
               <div class="autocomplete" style="width:100%;">
                 <span>
                   <input id="inputword" type="text" name="myCountry" placeholder="Type Word..." onkeyup="displayClear()">
-                  <img src="image/close.png" id="close-icon" type="reset" onclick="clearInput()" style="width:20px;height:20px;">
+                  <img src="image/close.png" id="close-icon" type="reset" onclick="clearInput()">
                   <div class="search" onclick="enteredWord()">
                     <img src="image/search.png" onchange="myFunction()">
                   </div>
@@ -39,13 +57,13 @@
           <br>
           <div class="w-m">
             <h3>
-              <span id="searchWord"></span>
               <span id="speech">
                 <img src="image/volume.png" onclick="sayItOutLoud('inputword')">
                 <span id="favorite">
                   <img src="image/heart.png" onclick="adFavorite()">
                 </span>
               </span>
+              <span id="searchWord"></span>
             </h3>
             <p id="meaning"> Search a Word to see the meaning </p>
           </div>
@@ -72,7 +90,6 @@
 
 
         <!-- Extra section -->
-        <div class="extra-sec col_fourth">
           <div class="extra-sec-row">
             <div class="extra-sec-col" onclick="historyView()">
               <img src="image/history.png">
@@ -83,8 +100,6 @@
               <img src="image/heart.png">
               <h4>Feborite</h4>
             </div>
-          </div>
-          <div class="extra-sec-row">
             <div class="extra-sec-col rating">
               <img src="image/rating.png">
               <h4>User Rating</h4>
@@ -95,9 +110,15 @@
             </div>
           </div>
         </div>
-      </div>
+    </main>
 
 
+
+    <footer>
+      <img src="/image/heart.png" alt="sandeep">
+      <a href="http://iamsandeep.rf.gd/">Sandeep</a>
+      <img src="/image/heart.png" alt="sandeep">
+    </footer>
     <!-- <div class="blank"></div> -->
     <script src="js/w-script.js"></script>
     <script src="js/a-com.js"></script>
@@ -145,7 +166,7 @@ function enteredWord() {
       words = words;
     }
     document.getElementById("speech").style.display = "block";
-    document.getElementById("searchWord").innerHTML = words + " ";
+    document.getElementById("searchWord").innerHTML = "" + words;
   switch(words) {
 
 case "a":
