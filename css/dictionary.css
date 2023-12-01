@@ -17,11 +17,12 @@ body{
 }
 h1{
   text-align: center;
-  color: #003e5c;
+  /* color: #003e5c; */
+  color: rgb(182, 100, 100);
   font-size: 35px;
   position: relative;
   padding-bottom: 50px;
-  text-shadow: 2px 2px #575757;
+  text-shadow: 2px 2px rgb(0, 0, 0);
 }
 #c-link{
   display: none;
