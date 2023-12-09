@@ -283,7 +283,7 @@ main img{
 #pop-up #favorite-view, #pop-up #history-view{
   padding: 10px;
 }
-#forFav, #forhistory{
+#forFav, #forhistory, #socialShare{
   display: none;
 }
 #pop-up li{

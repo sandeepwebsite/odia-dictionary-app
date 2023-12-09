@@ -14,19 +14,19 @@ function closeNav() {
 
 
 function sayItOutLoud(id) {
-  // const message = document.getElementById('inputword').value;
-  // var speech = new SpeechSynthesisUtterance();
-  // speech.lang = "hi-IN";
-  // speech.text = message;
-  // speech.volume = 5;
-  // speech.rate = 1;
-  // speech.pitch = 1;
+  const message = document.getElementById('inputword').value;
+  var speech = new SpeechSynthesisUtterance();
+  speech.lang = "hi-IN";
+  speech.text = message;
+  speech.volume = 5;
+  speech.rate = 1;
+  speech.pitch = 1;
 
-  // window.speechSynthesis.speak(speech);
+  window.speechSynthesis.speak(speech);
   
-  var u = new SpeechSynthesisUtterance();
-  u.text = document.getElementById('inputword').value;
-  speechSynthesis.speak(u);
+  // var u = new SpeechSynthesisUtterance();
+  // u.text = document.getElementById('inputword').value;
+  // speechSynthesis.speak(u);
 };
 
 
@@ -111,8 +111,6 @@ function historyView(){
       });
     }}
     
-
-// Suggestion Link
 
 
 
