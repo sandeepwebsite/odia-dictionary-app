@@ -30,10 +30,10 @@ function textspeak() {
 
 //   window.speechSynthesis.speak(speech);
   
-  // var u = new SpeechSynthesisUtterance();
-  // u.text = document.getElementById('inputword').value;
-  // speechSynthesis.speak(u);
-};
+//   var u = new SpeechSynthesisUtterance();
+//   u.text = document.getElementById('inputword').value;
+//   speechSynthesis.speak(u);
+// };
 
 
 
