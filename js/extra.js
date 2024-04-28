@@ -10,13 +10,7 @@ function closeNav() {
 
 
 
-// speech script
 
-
-function textspeak() {
-    var text = document.getElementById('inputword').value;
-    responsiveVoice.speak(text);
-}
 
 
 // function sayItOutLoud(id) {
