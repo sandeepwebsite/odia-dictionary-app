@@ -125,8 +125,14 @@
     <script src="js/a-com.js"></script>
     <script src="js/extra.js"></script>
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+// speech script
 
-
+<script>
+  function textspeak() {
+      var text = document.getElementById('inputword').value;
+      responsiveVoice.speak(text);
+  }
+</script>
 
 
 
