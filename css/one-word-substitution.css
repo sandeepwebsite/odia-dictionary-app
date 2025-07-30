@@ -384,6 +384,19 @@ footer button.show {
   background: #5372F0;
 }
 
+
+.signature{
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.signature a{
+  color: #ff0066;
+  text-decoration: none;
+}
+
 /* Responsive media query code for small devices */
 @media (max-width: 768px) {
   section {
